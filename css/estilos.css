@@ -434,6 +434,18 @@ img {
     color: #555;
 }
 
+.link_social{
+    font-size: 1.5em;
+    margin: 0 20px;
+    color: #ff6cab;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.link_social:hover{
+    color: white;
+}
+
 @media screen and (min-width:450px) {
     .product__img {
         height: 200px;
@@ -450,6 +462,13 @@ img {
 @media screen and (min-width:590px) {
     .product__img {
         height: 250px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .link_social{
+        display: block;
+        margin: 20px;
     }
 }
 
