@@ -465,7 +465,7 @@ img {
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:870px) {
     .link_social{
         display: block;
         margin: 20px;
