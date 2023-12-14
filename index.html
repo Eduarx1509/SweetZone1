@@ -83,32 +83,32 @@
                 <div class="product">
                     <img src="img/lamparacorazones.jpg" alt="" class="product__img">
                     <div class="product__description">
-                        <h3 class="product__title">Lámpara Corazones Flechados</h3>
-                        <span class="producto__price">S/ 60.00</span>
+                        <h3 class="product__title">Lámpara 3D Corazones Flechados</h3>
+                        <span class="producto__price">S/ 70.00</span><span class="new__price">S/50.00</span>
                     </div>
                     <i class="product__icon fa-solid fa-cart-plus"></i>
                 </div>
                 <div class="product">
                     <img src="img/lamparafingers.jpg" alt="" class="product__img">
                     <div class="product__description">
-                        <h3 class="product__title">Lámpara Fingers Cute Corazón</h3>
-                        <span class="producto__price">S/ 70.00</span>
+                        <h3 class="product__title">Lámpara 3D Fingers Love</h3>
+                        <span class="producto__price">S/ 70.00</span><span class="new__price">S/50.00</span>
                     </div>
                     <i class="product__icon fa-solid fa-cart-plus"></i>
                 </div>
-                <div class="product">
-                    <img src="img/lentescorazonefecto.webp" alt="" class="product__img">
+                <div class="product" onmouseover="changeImage()" onmouseout="resetImage()">
+                    <img src="img/lentescorazonefecto.webp" alt="" class="product__img" id="productImage">
                     <div class="product__description">
-                        <h3 class="product__title">Gafas Reflectoras de Corazón</h3>
-                        <span class="producto__price">S/ 45.00</span>
+                        <h3 class="product__title">Gafas Reflectoras con Efecto de Corazón</h3>
+                        <span class="producto__price">S/ 55.00</span><span class="new__price">S/35.00</span>
                     </div>
                     <i class="product__icon fa-solid fa-cart-plus"></i>
                 </div>
                 <div class="product">
                     <img src="img/lentescorazonhigh.webp" alt="" class="product__img">
                     <div class="product__description">
-                        <h3 class="product__title">Gafas Definition Mujer</h3>
-                        <span class="producto__price">S/ 40.00</span>
+                        <h3 class="product__title">Gafas Tendencia Mujer</h3>
+                        <span class="producto__price">S/ 50.00</span><span class="new__price">S/35.00</span>
                     </div>
                     <i class="product__icon fa-solid fa-cart-plus"></i>
                 </div>
@@ -123,8 +123,8 @@
                 <div class="product">
                     <img src="img/lentescorazonsinmontura.webp" alt="" class="product__img">
                     <div class="product__description">
-                        <h3 class="product__title">Gafas en Forma de Corazón sin Montura</h3>
-                        <span class="producto__price">S/ 40.00</span>
+                        <h3 class="product__title">Gafas Caramelo Mujer</h3>
+                        <span class="producto__price">S/ 35.00</span><span class="new__price">S/20.00</span>
                     </div>
                     <i class="product__icon fa-solid fa-cart-plus"></i>
                 </div>
@@ -177,9 +177,12 @@
 
     <footer class="main-footer">
         <p class="copy">
-            <a class="link_social" href="https://www.tiktok.com/@sweet.zone.oficial?_t=8i6zEO7dU5W&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i> sweet.zone.oficial</a>
-            <a class="link_social" href="https://www.instagram.com/sweet.zone.oficial/?igshid=NzZlODBkYWE4Ng%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i> sweet.zone.oficial</a>
-            <a class="link_social" href="https://www.facebook.com/profile.php?id=61554688670449" target="_blank"><i class="fa-brands fa-facebook"></i> SWEET ZONE</a>
+            <a class="link_social" href="https://www.tiktok.com/@sweet.zone.oficial?_t=8i6zEO7dU5W&_r=1"
+                target="_blank"><i class="fa-brands fa-tiktok"></i> sweet.zone.oficial</a>
+            <a class="link_social" href="https://www.instagram.com/sweet.zone.oficial/?igshid=NzZlODBkYWE4Ng%3D%3D"
+                target="_blank"><i class="fa-brands fa-instagram"></i> sweet.zone.oficial</a>
+            <a class="link_social" href="https://www.facebook.com/profile.php?id=61554688670449" target="_blank"><i
+                    class="fa-brands fa-facebook"></i> SWEET ZONE</a>
         </p>
         <div class="footer__section">
             <h2 class="footer__title">Sobre Nosotros</h2>
@@ -213,6 +216,15 @@
     </footer>
     <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
+    <script>
+        function changeImage() {
+            document.getElementById('productImage').src = 'img/lentescorazon.gif';
+        }
+
+        function resetImage() {
+            document.getElementById('productImage').src = 'img/lentescorazonefecto.webp';
+        }
+    </script>
 </body>
 
 </html>
