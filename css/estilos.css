@@ -231,6 +231,11 @@ img {
     grid-gap: 10px;
 }
 
+.container-products a{
+    text-decoration: none;
+    color: black;
+}
+
 .product {
     border: 1px solid #ccc;
     padding: 20px;
