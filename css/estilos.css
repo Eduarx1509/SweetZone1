@@ -115,10 +115,20 @@ img {
     padding: 0 20px;
 }
 
+.lema {
+    padding: 5px;
+    margin: 0;
+    margin-top: 20px;
+    background: #ff6cab;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
 /* ============= SLIDER =============*/
 
 .container-slider {
-    margin: 50px 0;
+    margin-bottom: 50px;
     position: relative;
     overflow: hidden;
 }
@@ -470,6 +480,10 @@ img {
 
 /* ============ TABLET ============ */
 @media screen and (min-width:590px) {
+
+    .lema {
+    font-size: 1.6em;
+    }
     .product__img {
         height: 250px;
     }
