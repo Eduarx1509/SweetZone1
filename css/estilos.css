@@ -221,9 +221,9 @@ img {
 
 /*================ PRODUCTOS ================*/
 
-.main-title{
+.main-title {
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 1.8em;
 }
 
 .container-products {
@@ -231,7 +231,7 @@ img {
     grid-gap: 10px;
 }
 
-.container-products a{
+.container-products a {
     text-decoration: none !important;
     color: black !important;
 }
@@ -276,7 +276,7 @@ img {
     font-size: 1.4em;
 }
 
-.new__price{
+.new__price {
     color: #ff6cab;
     text-decoration: none;
     font-weight: 500;
@@ -314,7 +314,7 @@ img {
     letter-spacing: 1px;
 }
 
-.testimonial__title span{
+.testimonial__title span {
     font-weight: 300;
     margin: 1em;
     color: #777;
@@ -444,7 +444,7 @@ img {
     color: #555;
 }
 
-.link_social{
+.link_social {
     font-size: 1.5em;
     margin: 0 20px;
     color: #ff6cab;
@@ -452,7 +452,7 @@ img {
     transition: .5s;
 }
 
-.link_social:hover{
+.link_social:hover {
     color: white;
 }
 
@@ -470,13 +470,17 @@ img {
 
 /* ============ TABLET ============ */
 @media screen and (min-width:590px) {
+    .main-title {
+        font-size: 2.5em;
+    }
+
     .product__img {
         height: 250px;
     }
 }
 
 @media screen and (max-width:870px) {
-    .link_social{
+    .link_social {
         display: block;
         margin: 20px;
     }
