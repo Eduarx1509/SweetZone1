@@ -482,14 +482,23 @@ img {
 @media screen and (min-width:590px) {
 
     .lema {
-    font-size: 1.6em;
+        font-size: 1.6em;
     }
+
     .product__img {
         height: 250px;
     }
 
     .main-title {
         font-size: 2em;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+
+    .lema {
+        font-size: 1.1em;
     }
 }
 
