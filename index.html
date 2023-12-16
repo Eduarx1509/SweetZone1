@@ -44,7 +44,8 @@
                 <div class="slider__content">
                     <h2 class="slider__title">Lentes</h2>
                     <p class="slider__txt">Con nuevos diseños</p>
-                    <a href="" class="btn-shop">COMPRAR AHORA</a>
+                    <a href="#productSection" class="btn-shop" onclick="scrollToSection('productSection')">COMPRAR
+                        AHORA</a>
                 </div>
             </div>
             <div class="slider__section">
@@ -52,7 +53,8 @@
                 <div class="slider__content">
                     <h2 class="slider__title">Lámparas</h2>
                     <p class="slider__txt">Con efectos novedosos</p>
-                    <a href="" class="btn-shop">COMPRAR AHORA</a>
+                    <a href="#productSection" class="btn-shop" onclick="scrollToSection('productSection')">COMPRAR
+                        AHORA</a>
                 </div>
             </div>
             <div class="slider__section">
@@ -60,7 +62,8 @@
                 <div class="slider__content">
                     <h2 class="slider__title">Lentes</h2>
                     <p class="slider__txt">Con efectos maravillosos</p>
-                    <a href="" class="btn-shop">COMPRAR AHORA</a>
+                    <a href="#productSection" class="btn-shop" onclick="scrollToSection('productSection')">COMPRAR
+                        AHORA</a>
                 </div>
             </div>
             <div class="slider__section">
@@ -68,7 +71,8 @@
                 <div class="slider__content">
                     <h2 class="slider__title">Lámparas</h2>
                     <p class="slider__txt">De neón para decorar</p>
-                    <a href="" class="btn-shop">COMPRAR AHORA</a>
+                    <a href="#productSection" class="btn-shop" onclick="scrollToSection('productSection')">COMPRAR
+                        AHORA</a>
                 </div>
             </div>
         </div>
@@ -79,56 +83,221 @@
         <div class="container">
             <h2 class="main-title">Nuevos productos para ti</h2>
             <section class="container-products" id="productSection">
-                <a href="https://api.whatsapp.com/send/?phone=51910645892&text=%C2%A1Hola%21%20Quisiera%20solicitar%20informaci%C3%B3n&type=phone_number&app_absent=0"
-                    target="_blank">
-                    <div class="product">
-                        <img src="img/lamparacorazones.jpg" alt="" class="product__img">
-                        <div class="product__description">
-                            <h3 class="product__title">Lámpara 3D Corazones Flechados</h3>
-                            <span class="producto__price">S/ 70.00</span><span class="new__price">S/50.00</span>
-                        </div>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
+                <div class="product">
+                    <img src="img/lamparacorazones.jpg" alt="" class="product__img">
+                    <div class="product__description">
+                        <h3 class="product__title">Lámpara 3D Corazones Flechados</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img" style="background: rgb(255, 239, 150);"></button>
+                            </li>
+                        </ul>
+                        <span class="producto__price">S/ 70.00</span><span class="new__price">S/50.00</span>
                     </div>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Lámpara 3D Corazones Flechados')">Solicitar</a>
+                </div>
                 </a>
                 <div class="product">
                     <img src="img/lamparafingers.jpg" alt="" class="product__img">
                     <div class="product__description">
                         <h3 class="product__title">Lámpara 3D Fingers<br>Love</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img" style="background: rgb(255, 239, 150);"></button>
+                            </li>
+                        </ul>
                         <span class="producto__price">S/ 70.00</span><span class="new__price">S/50.00</span>
                     </div>
-                    <i class="product__icon fa-solid fa-cart-plus"></i>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Lámpara 3D Fingers Love')">Solicitar</a>
                 </div>
                 <div class="product" onmouseover="changeImage()" onmouseout="resetImage()">
                     <img src="img/lentescorazonefecto.webp" alt="" class="product__img" id="productImage">
                     <div class="product__description">
                         <h3 class="product__title">Gafas Reflectoras con Efecto de Corazón</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img" style="background: red;"></button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: #fbb2cd;"></button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="color: white; background: #ff6cab; width: 80px; border-radius: 5px;">
+                                    <i class="fa-solid fa-video"></i> Vídeo</button>
+                            </li>
+                        </ul>
                         <span class="producto__price">S/ 55.00</span><span class="new__price">S/35.00</span>
                     </div>
-                    <i class="product__icon fa-solid fa-cart-plus"></i>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Gafas Reflectoras con Efecto de Corazón')">Solicitar</a>
                 </div>
                 <div class="product">
                     <img src="img/lentescorazonhigh.webp" alt="" class="product__img">
                     <div class="product__description">
                         <h3 class="product__title">Gafas Tendencia<br>Mujer</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img" style="background: #fbb2cd;"></button>
+                            </li>
+                        </ul>
                         <span class="producto__price">S/ 50.00</span><span class="new__price">S/35.00</span>
                     </div>
-                    <i class="product__icon fa-solid fa-cart-plus"></i>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Gafas Tendencia Mujer')">Solicitar</a>
                 </div>
                 <div class="product">
-                    <img src="img/lentesosos.webp" alt="" class="product__img">
+                    <img src="img/lentesososazulrojo.webp" alt="" class="product__img product5">
                     <div class="product__description">
-                        <h3 class="product__title">Gafas en Forma<br>de Ositos</h3>
+                        <h3 class="product__title">Anteojos Retro de<br>Ositos Azul - Rojo</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(72, 72, 255), rgb(255, 160, 176));"
+                                    onclick="changeImage('product5','azulrojo')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(255, 160, 176),white);"
+                                    onclick="changeImage('product5','rosa')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(70, 45, 11),white);"
+                                    onclick="changeImage('product5','marronblanco')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(151, 49, 49),rgb(255, 249, 164));"
+                                    onclick="changeImage('product5','naranjaoro')">
+                                </button>
+                            </li>
+                        </ul>
                         <span class="producto__price">S/ 40.00</span><span class="new__price">S/25.00</span>
                     </div>
-                    <i class="product__icon fa-solid fa-cart-plus"></i>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Anteojos Retro de Ositos Azul - Rojo')">Solicitar</a>
+                </div>
+                <div class="product">
+                    <img src="img/lentesososrosa.webp" alt="" class="product__img product6">
+                    <div class="product__description">
+                        <h3 class="product__title">Anteojos Retro de<br>Ositos Rosado - Blanco</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(255, 160, 176),white);"
+                                    onclick="changeImage('product6','rosa')">
+                                </button>
+                            </li>
+                            <li><button class="selector__img"
+                                    style="background: linear-gradient(rgb(72, 72, 255), rgb(255, 160, 176));"
+                                    onclick="changeImage('product6','azulrojo')">
+                                </button>
+                            </li>
+                            <li><button class="selector__img"
+                                    style="background: linear-gradient(rgb(70, 11, 11),white);"
+                                    onclick="changeImage('product6','marronblanco')">
+                                </button>
+
+                            </li>
+                            <li><button class="selector__img"
+                                    style="background: linear-gradient(rgb(151, 49, 49),rgb(255, 249, 164));"
+                                    onclick="changeImage('product6','naranjaoro')">
+                                </button>
+                            </li>
+                        </ul>
+                        <span class="producto__price">S/ 40.00</span><span class="new__price">S/25.00</span>
+                    </div>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Anteojos Retro de Ositos Rosado - Blanco')">Solicitar</a>
+                </div>
+                <div class="product">
+                    <img src="img/lentesososmarronblanco.webp" alt="" class="product__img product7">
+                    <div class="product__description">
+                        <h3 class="product__title">Anteojos Retro de<br>Ositos Marrón Blanco</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(70, 11, 11),white);"
+                                    onclick="changeImage('product7','marronblanco')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(255, 160, 176),white);"
+                                    onclick="changeImage('product7','rosa')">
+                                </button>
+                            </li>
+                            <li><button class="selector__img"
+                                    style="background: linear-gradient(rgb(72, 72, 255), rgb(255, 160, 176));"
+                                    onclick="changeImage('product7','azulrojo')">
+                                </button>
+                            </li>
+                            <li><button class="selector__img"
+                                    style="background: linear-gradient(rgb(151, 49, 49),rgb(255, 249, 164));"
+                                    onclick="changeImage('product7','naranjaoro')">
+                                </button>
+                            </li>
+                        </ul>
+                        <span class="producto__price">S/ 40.00</span><span class="new__price">S/25.00</span>
+                    </div>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Anteojos Retro de Ositos Marrón Blanco')">Solicitar</a>
+                </div>
+                <div class="product">
+                    <img src="img/lentesososnaranjaoro.webp" alt="" class="product__img product8">
+                    <div class="product__description">
+                        <h3 class="product__title">Anteojos Retro de<br>Ositos Naranja - Oro</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(151, 49, 49),rgb(255, 249, 164));"
+                                    onclick="changeImage('product8','naranjaoro')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(255, 160, 176),white);"
+                                    onclick="changeImage('product8','rosa')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(72, 72, 255), rgb(255, 160, 176));"
+                                    onclick="changeImage('product8','azulrojo')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="background: linear-gradient(rgb(70, 11, 11),white);"
+                                    onclick="changeImage('product8','marronblanco')">
+                                </button>
+
+                            </li>
+                        </ul>
+                        <span class="producto__price">S/ 40.00</span><span class="new__price">S/25.00</span>
+                    </div>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Anteojos Retro de Ositos Naranja - Oro')">Solicitar</a>
                 </div>
                 <div class="product">
                     <img src="img/lentescorazonsinmontura.webp" alt="" class="product__img">
                     <div class="product__description">
                         <h3 class="product__title">Gafas Caramelo<br>Mujer</h3>
+                        <ul class="selector"">
+                            <li>
+                                <button class=" selector__img" style="background: #fbb2cd;"></button>
+                            </li>
+                        </ul>
                         <span class="producto__price">S/ 35.00</span><span class="new__price">S/20.00</span>
                     </div>
-                    <i class="product__icon fa-solid fa-cart-plus"></i>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Gafas Caramelo Mujer')">Solicitar</a>
                 </div>
             </section>
         </div>
@@ -137,9 +306,9 @@
             <h2 class="section__title">Testimonios</h2>
             <h3 class="testimonial__title">Rolly<span>Cliente</span></h3>
             <p class="testimonial__txt">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorum atque ex molestiae corporis
-                doloremque, voluptatum, quisquam odit dignissimos nisi hic autem eius voluptatem sequi consequuntur
-                deleniti excepturi qui perferendis!
+                ¡Increíble experiencia de compra en Sweet Zone! Como cliente habitual, siempre encuentro las últimas
+                tendencias a precios asequibles. Las lámparas de neón y los lentes con diseños únicos han transformado
+                por completo mi espacio y mi estilo.
             </p>
 
         </section>
@@ -164,7 +333,7 @@
             </div>
             <div class="tip">
                 <i class="fa-solid fa-rocket"></i>
-                <h2 class="tip__title">Delivery Rápido</h2>
+                <h2 class="tip__title">Atención Rápida</h2>
                 <p class="tip__txt">Coordina con nosotros para poder llevar tus productos a tu domicilio.</p>
                 <a href="" class="btn-shop">Comprar ahora</a>
             </div>
@@ -193,7 +362,7 @@
         </div>
         <div class="footer__section">
             <h2 class="footer__title">Ubicación</h2>
-            <p class="footer__txt">Rímac, Lima - Perú</p>
+            <p class="footer__txt">Cercado de Lima, Lima - Perú</p>
         </div>
         <div class="footer__section">
             <h2 class="footer__title">Contacto</h2>
@@ -207,12 +376,6 @@
             <a href="" class="footer__link">Destacados</a>
             <a href="" class="footer__link">Productos</a>
             <a href="" class="footer__link">Contacto</a>
-        </div>
-        <div class="footer__section">
-            <h2 class="footer__title">Regístrate para recibir ofertas</h2>
-            <p class="footer__txt">Para suscribirte a nuestra lista de clientes frecuentes y recibir correos con nuevos
-                productos.</p>
-            <input type="email" class="footer__input" placeholder="Ingresa tu correo">
         </div>
         <p class="copy">© 2023 Sweet Zone. Todos los Derechos Reservados</p>
     </footer>
@@ -228,6 +391,8 @@
         }
     </script>
     <script src="js/buscar.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/colorchange.js"></script>
 </body>
 
 </html>
