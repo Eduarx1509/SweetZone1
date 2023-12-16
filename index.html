@@ -112,16 +112,121 @@
                     <a target="_blank" href="#" class="btn-shop"
                         onclick="enviarMensaje('Lámpara 3D Fingers Love')">Solicitar</a>
                 </div>
-                <div class="product" onmouseover="changeImage()" onmouseout="resetImage()">
-                    <img src="img/lentescorazonefecto.webp" alt="" class="product__img" id="productImage">
+                <div class="product">
+                    <img src="img/lentescorazonefectonegro.webp" alt="" class="product__img product1" id="productImage">
                     <div class="product__description">
-                        <h3 class="product__title">Gafas Reflectoras con Efecto de Corazón</h3>
+                        <h3 class="product__title">Gafas Reflectoras con Efecto de Corazón - Negro</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img" style="background: black;"
+                                    onclick="changeImage1('product1','negro')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: #fbb2cd;"
+                                    onclick="changeImage1('product1','rosa')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: white;"
+                                    onclick="changeImage1('product1','blanco')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: red;"
+                                    onclick="changeImage1('product1','rojo')">
+                                </button>
+
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="color: white; background: #ff6cab; width: 80px; border-radius: 5px;">
+                                    <i class="fa-solid fa-video"></i> Vídeo</button>
+                            </li>
+                        </ul>
+                        <span class="producto__price">S/ 55.00</span><span class="new__price">S/35.00</span>
+                    </div>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Gafas Reflectoras con Efecto de Corazón')">Solicitar</a>
+                </div>
+                <div class="product">
+                    <img src="img/lentescorazonefectorosa.webp" alt="" class="product__img product2" id="productImage">
+                    <div class="product__description">
+                        <h3 class="product__title">Gafas Reflectoras con Efecto de Corazón - Rosa</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img" style="background: #fbb2cd;"
+                                    onclick="changeImage1('product2','rosa')">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: black;"></button>
+                            </li>
+
+                            <li>
+                                <button class="selector__img" style="background: white;"></button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: red;"></button>
+
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="color: white; background: #ff6cab; width: 80px; border-radius: 5px;">
+                                    <i class="fa-solid fa-video"></i> Vídeo</button>
+                            </li>
+                        </ul>
+                        <span class="producto__price">S/ 55.00</span><span class="new__price">S/35.00</span>
+                    </div>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Gafas Reflectoras con Efecto de Corazón')">Solicitar</a>
+                </div>
+                <div class="product">
+                    <img src="img/lentescorazonefectoblanco.webp" alt="" class="product__img product3"
+                        id="productImage">
+                    <div class="product__description">
+                        <h3 class="product__title">Gafas Reflectoras con Efecto de Corazón - Blanco</h3>
+                        <ul class="selector">
+                            <li>
+                                <button class="selector__img" style="background: white;"></button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: black;"></button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: #fbb2cd;"></button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: red;"></button>
+
+                            </li>
+                            <li>
+                                <button class="selector__img"
+                                    style="color: white; background: #ff6cab; width: 80px; border-radius: 5px;">
+                                    <i class="fa-solid fa-video"></i> Vídeo</button>
+                            </li>
+                        </ul>
+                        <span class="producto__price">S/ 55.00</span><span class="new__price">S/35.00</span>
+                    </div>
+                    <a target="_blank" href="#" class="btn-shop"
+                        onclick="enviarMensaje('Gafas Reflectoras con Efecto de Corazón')">Solicitar</a>
+                </div>
+                <div class="product">
+                    <img src="img/lentescorazonefectorojo.webp" alt="" class="product__img product4" id="productImage">
+                    <div class="product__description">
+                        <h3 class="product__title">Gafas Reflectoras con Efecto de Corazón - Rojo</h3>
                         <ul class="selector">
                             <li>
                                 <button class="selector__img" style="background: red;"></button>
                             </li>
                             <li>
+                                <button class="selector__img" style="background: black;"></button>
+                            </li>
+                            <li>
                                 <button class="selector__img" style="background: #fbb2cd;"></button>
+                            </li>
+                            <li>
+                                <button class="selector__img" style="background: white;"></button>
                             </li>
                             <li>
                                 <button class="selector__img"
@@ -381,15 +486,6 @@
     </footer>
     <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
-    <script>
-        function changeImage() {
-            document.getElementById('productImage').src = 'img/lentescorazon.gif';
-        }
-
-        function resetImage() {
-            document.getElementById('productImage').src = 'img/lentescorazonefecto.webp';
-        }
-    </script>
     <script src="js/buscar.js"></script>
     <script src="js/whatsapp.js"></script>
     <script src="js/colorchange.js"></script>
